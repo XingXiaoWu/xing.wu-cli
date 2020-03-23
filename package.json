@@ -1,16 +1,16 @@
 {
   "name": "wxplatform-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "wx的cli工具",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "bin":{
     "wxplatform-cli":"./src/index.js"
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wuxing",
+  "license": "ISC",
   "dependencies": {
     "chalk": "^3.0.0",
     "commander": "^5.0.0",

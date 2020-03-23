@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 // 用来进行命令行交互的
 const program = require("commander");
 // 读取处理文件
