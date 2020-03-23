@@ -57,7 +57,7 @@ program
         const spinner = ora("download...");
         spinner.start();
         download(url, name, { clone: true }, err => {
-          // 判断是否存在错误111
+          // 判断是否存在错误
           if (err) {
             // 下载失败，展示原因
             spinner.fail();
