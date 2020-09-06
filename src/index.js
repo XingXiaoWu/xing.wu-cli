@@ -31,7 +31,7 @@ program
 // 添加模板
 program
     .command('add <name> <url>')
-    .description('本地添加模板, 域名:所有者/项目名称#分支 例如 https://gitea.51trust.com:front/vueDemo#master')
+    .description('本地添加模板, 域名:所有者/项目名称#分支 例如 https://github.com:xingxiaowu/template-vue#master')
     .action(onAdd);
 
 // 移除模板
