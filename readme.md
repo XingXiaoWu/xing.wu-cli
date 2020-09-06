@@ -2,7 +2,7 @@
 
 ```
 wxplatform-cli -V
-szyx-wxplatform --version
+wxplatform-wxplatform --version
 ```
 
 ### 三方库介绍
