@@ -8,7 +8,7 @@ const registries = require('../json/registries.json')
 /**
  * 当前cli所在路径
  */
-const cliPath = path.resolve(".")
+// const cliPath = path.resolve(".")
 
 /**
  * 
@@ -16,7 +16,7 @@ const cliPath = path.resolve(".")
  * @param {*} object 需要写入的对象
  */
 function wirteSync (filepath, jsonObject) {
-    fs.writeFileSync(cliPath + filepath, JSON.stringify(jsonObject, null, '\t'))
+    fs.writeFileSync(filepath, JSON.stringify(jsonObject, null, '\t'))
 }
 /**
  * 
@@ -61,7 +61,7 @@ function getAllTemplates(){
 }
 
 module.exports = {
-    cliPath,
+    // cliPath,
     wirteSync,
     successConsole,
     errorConsole,
