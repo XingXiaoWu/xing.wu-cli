@@ -61,7 +61,6 @@ function getAllTemplates(){
 }
 
 module.exports = {
-    // cliPath,
     wirteSync,
     successConsole,
     errorConsole,
