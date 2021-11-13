@@ -35,25 +35,25 @@ npx @xing.wu/cli init 项目名
 npx @xing.wu/cli init aaa
 npx @xing.wu/cli i aaa
 # 安装后使用
-@xing.wu/cli init aaa
-@xing.wu/cli i aaa
+xingwu init aaa
+xingwu i aaa
 ```
 
 ## 获取版本号
 ```bash
-@xing.wu/cli --version
-@xing.wu/cli -V
+xingwu --version
+xingwu -V
 ```
 
 ## 获取帮助信息
 ```
-@xing.wu/cli --help
+xingwu --help
 ```
 
 ## 已有项目添加git hook
 ```
-@xing.wu/cli add git hooks
-npx @xing.wu/cli add git hooks
+xingwu add-githooks
+npx @xing.wu/cli add-githooks
 ```
 
 
