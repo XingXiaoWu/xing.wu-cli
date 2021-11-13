@@ -1,30 +1,76 @@
-查看版本
+# @xing.wu/cli
 
+# 代码相关
 ```
-wxplatform-cli -V
-wxplatform-wxplatform --version
+.
+├── node_modules                    
+├── package.json                    
+├── pnpm-lock.yaml
+├── readme.md                       
+└── src                             代码主体
+    ├── actions                     操作的action
+    │   └── init.js                     initAction
+    ├── config                      配置文件
+    │   └── templates.json              模板列表
+    |   └── hooks                       添加git hooks的默认配置文件
+    ├── index.js                    入口文件
+    └── utils                       工具类
+        ├── downTemplate.js             下载模板
+        ├── exit.js                     退出
+        ├── log.js                      颜色打印
+        └── spinner.js                  loading实例
 ```
 
-### 三方库介绍
-
+# 使用方法
+## 安装(不推荐安装，建议npx使用)
 ```
-<!-- 终端样式库 -->
-"chalk": "^3.0.0",
-<!-- 命令行交互 -->
-"commander": "^5.0.0",
-<!-- 从git拉模板 -->
-"download-git-repo": "^3.0.2",
-<!-- fs操作拓展 -->
-"fs-extra": "^9.0.0",
-<!-- 模板引擎 -->
-"handlebars": "^4.7.3",
-<!-- 命令行交互 -->
-"inquirer": "^7.1.0",
-<!-- 日志输出 -->
-"log-symbols": "^3.0.0",
-<!-- 加载效果，图标 -->
-"ora": "^4.0.3",
-<!-- 检验npm名字取的对不对 -->
-"validate-npm-package-name": "^3.0.0"
-update-notifier :cli 更新后续可以加上
+npm install @xing.wu/cli -g
+```
+
+## 新建项目(推荐使用npx)
+```bash
+# npx使用
+npx @xing.wu/cli init 项目名
+# 例如
+npx @xing.wu/cli init aaa
+npx @xing.wu/cli i aaa
+# 安装后使用
+@xing.wu/cli init aaa
+@xing.wu/cli i aaa
+```
+
+## 获取版本号
+```bash
+@xing.wu/cli --version
+@xing.wu/cli -V
+```
+
+## 获取帮助信息
+```
+@xing.wu/cli --help
+```
+
+## 已有项目添加git hook
+```
+@xing.wu/cli add git hooks
+npx @xing.wu/cli add git hooks
+```
+
+
+# 调试相关
+1.
+```
+pnpm link --global
+```
+
+2.`/src/index.js`第一行修改为
+```
+#!/usr/bin/env node --inspect-brk
+```
+
+3.在命令行中执行相应命令，等启动以后，使用`vscode`启动`手动链接到测试任务`
+
+4.卸载全局任务
+```
+pnpm remove @xing.wu/cli -g
 ```

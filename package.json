@@ -1,26 +1,32 @@
 {
-  "name": "wxplatform-cli",
-  "version": "1.0.8",
+  "name": "@xing.wu/cli",
+  "version": "1.0.0",
+  "author": "xing.wu<329106954@qq.com>",
   "description": "wx的cli工具",
-  "main": "index.js",
+  "main": ".src/index.js",
+  "license": "ISC",
   "bin": {
-    "wxplatform-cli": "./src/index.js"
+    "xingwu": "./src/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "wuxing",
-  "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.0",
-    "commander": "^6.1.0",
+    "commander": "^8.3.0",
     "download-git-repo": "^3.0.2",
-    "fs-extra": "^9.0.1",
-    "inquirer": "^7.3.3",
-    "lodash": "^4.17.20",
-    "log-symbols": "^4.0.0",
-    "ora": "^5.0.0",
+    "figlet": "^1.5.2",
+    "fs-extra": "^9.1.0",
+    "inquirer": "^8.2.0",
+    "lodash": "^4.17.21",
+    "log-symbols": "^5.0.0",
+    "ora": "5",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
     "shelljs": "^0.8.4",
     "validate-npm-package-name": "^3.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }

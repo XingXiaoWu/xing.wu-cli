@@ -1,0 +1,13 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+MSG=`awk '{printf("%s",$0)}' $1`
+echo $MSG
+# npx commitlint --edit $1
+if [[ $MSG =~ ^(feat:|fix:|docs:|style:|refactor:|perf:|test:|build:|ci:|revert:|types:|Merage).*$ ]]
+then
+    echo '成功'
+else
+    echo '请确保message以 (feat:|fix:|docs:|style:|refactor:|perf:|test:|build:|ci:|revert:|types:|Merage): 开头'
+    exit 1
+fi
