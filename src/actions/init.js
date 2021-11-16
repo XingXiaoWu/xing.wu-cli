@@ -74,7 +74,7 @@ const afterDown = (name, answers) => {
     // 1.重写packageJson
     writePackageJson(name, answers);
     // 1.1.重写nginx配置
-    writeNginxConfig(name);
+    // writeNginxConfig(name);
     // 2.移除.git并添加新的上传
     successLog('初始化git');
     gitInit(name, answers.gitrepo);

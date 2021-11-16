@@ -1,6 +1,6 @@
 {
   "name": "@xing.wu/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "xing.wu<329106954@qq.com>",
   "description": "wx的cli工具",
   "main": ".src/index.js",
